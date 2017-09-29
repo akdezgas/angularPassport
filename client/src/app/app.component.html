@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{title}}!
+  </h1>
+  <app-loginform></app-loginform>
+  <div *ngIf="user">
+    <h2> You are now logged in as {{ user.username }}!! </h2>
+    <p> Here's the user object </p>
+    <pre> {{ user | json }} </pre>
+
+    <button (click)="auth.logout().subscribe()"> logout </button>
+  </div>
+  <p class="error"> {{ error }} </p>
+</div>
