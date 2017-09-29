@@ -21,6 +21,10 @@ export class AuthService {
       return this.userLoginEvent;
     }
 
+    public getUser(){
+      return this.user;
+    }
+
     private emitUserLoginEvent(user){
       this.user = user;
       this.userLoginEvent.emit(user);
