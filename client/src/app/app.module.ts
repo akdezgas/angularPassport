@@ -10,13 +10,15 @@ import { UserprofileComponent } from './userprofile/userprofile.component';
 import { RouterModule } from '@angular/router';
 import { IsLoggedInService } from './services/isLoggedIn.canactivate.service';
 import {routes} from './routes';
+import { SignupformComponent } from './signupform/signupform.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginformComponent,
     HomeComponent,
-    UserprofileComponent
+    UserprofileComponent,
+    SignupformComponent
   ],
   imports: [
     BrowserModule,
